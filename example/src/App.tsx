@@ -1,28 +1,7 @@
-### react-partogram-chart
-
-
-### Installation
-
-**npm**
-
-```bash
-npm install react-partogram-chart --save
-```
-
-**yarn**
-
-```bash
-yarn add react-partogram-chart --sava
-```
-
-
-### [PlayGround](https://codesandbox.io/s/elastic-archimedes-7o3ui)
-
-### Example
-
-```js
 import React, { useState } from 'react'
+
 import C from 'react-partogram-chart'
+import { IData } from 'react-partogram-chart/dist/types'
 const d = [
   { checktime: '2019-09-01 07:01', cd: 3.5, df: -2, event: '阴检' },
   { checktime: '2019-09-01 09:01', cd: 5, df: 0.5, event: '阴检' },
@@ -32,7 +11,7 @@ const d = [
   { checktime: '2019-09-01 15:01', cd: 9, df: 4, event: '阴检' },
 ]
 const App = () => {
-  const [data, setData] = useState([])
+  const [data, setData] = useState<IData[]>([])
   return (
     <div style={{ width: '50vw', height: '50vh' }}>
       <C data={data} />
@@ -47,30 +26,3 @@ const App = () => {
 }
 
 export default App
-
-
-```
-
-### Props
-
-| Parameter | Description                        | Type    |
-| :-------- | :--------------------------------- | :------ |
-| data      | chart data                         | IData[]   |
-
-### Parameter Interface
-```typescript
-
-export interface IData {
-  checktime: string,
-  cd: number,
-  df: number,
-  event: string
-
-}
-
-
-```
-
-
-## preview
-![preview](docs/preview.jpg)
