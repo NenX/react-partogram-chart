@@ -16,7 +16,7 @@ yarn add react-partogram-chart --sava
 ```
 
 
-### [PlayGround](https://codesandbox.io/s/elastic-archimedes-7o3ui)
+### [PlayGround](https://codesandbox.io/s/admiring-waterfall-vrlmr?file=/src/App.js)
 
 ### Example
 
